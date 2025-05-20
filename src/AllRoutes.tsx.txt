@@ -1,0 +1,21 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+// Import your pages or components here
+import HomePage from './pages/HomePage';
+import ShopPage from './pages/ShopPage';
+import BlogPage from './pages/BlogPage';
+import ContactPage from './pages/ContactPage';
+
+const AllRoutes: React.FC = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/shop" element={<ShopPage />} />
+      <Route path="/blogs" element={<BlogPage />} />
+      <Route path="/contact" element={<ContactPage />} />
+    </Routes>
+  );
+};
+
+export default AllRoutes;
